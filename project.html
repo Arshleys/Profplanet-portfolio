@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content="width= device-width",initial scale="1.0">
+    <title>My Personal project</title>
+  </head>
+  <body>
+    <header>
+      <h1>My personal project</h1>
+      <p>Welcome to my project</p>
+    </header>
+    <main>
+      <section>
+        <h2>My project Gallery</h2>
+        <h3>Project 1:Personal Website</h3>
+        <img src="images/arshleys.jpg"
+        width="300">
+
+            <p>A website created using HTML.</p>
+
+            <h3>Project 2: Electrical Engineering</h3>
+            <img src="images/electrical.jpg"
+                 alt="Electrical engineering project"
+                 width="300">
+
+            <p>A project related to electrical engineering.</p>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 2: PROJECT TABLE -->
+        <section>
+            <h2>Project Details</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Project Name</th>
+                        <th>Technology Used</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Personal Website</td>
+                        <td>HTML</td>
+                        <td>In Progress</td>
+                    </tr>
+
+                    <tr>
+                        <td>Styled Webpage</td>
+                        <td>HTML and CSS</td>
+                        <td>Learning</td>
+                    </tr>
+
+                    <tr>
+                        <td>Python Program</td>
+                        <td>Python</td>
+                        <td>Learning</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+      </section>
+    </main>
+  </body>
+  <hr>
+
+        <!-- SECTION 3: PROJECT FORM -->
+        <section>
+            <h2>Suggest a Project</h2>
+            <p>Fill in the form to suggest a project idea.</p>
+
+            <form action="#" method="post">
+
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="project">Project Name:</label><br>
+                <input type="text" id="project" name="project" required>
+                <br><br>
+
+                <label for="category">Project Category:</label><br>
+                <select id="category" name="category">
+                    <option value="web">Web Development</option>
+                    <option value="python">Python Programming</option>
+                    <option value="engineering">Electrical Engineering</option>
+                </select>
+                <br><br>
+
+                <label for="message">Project Description:</label><br>
+                <textarea id="message" name="message"
+                          rows="5" cols="30" required></textarea>
+                <br><br>
+
+                <button type="submit">Submit Project Idea</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 My Portfolio</p>
+    </footer>
+
+</html>
