@@ -1,9 +1,10 @@
+*,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 body {
-  margin: 0cm;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 img {
@@ -12,39 +13,21 @@ img {
   display: block;
 }
 
-/*Design-Tokens.*/
-.root {
-  --text-color: #334155;
-  --background-color: azure;
-  --primary-color: #1d4ed8;
-  --secondary-color: #0f172a;
-  --white-color: #ffffff;
-
-  /*font sizes*/
-  --small-text: 0.875rem;
-  --normal-text: 1rem;
-  --large-text: 1.5rem;
-  --heading-text: 2rem;
-
-  --small-space: 0.5rem;
-  --medium-space: 1rem;
-  --large-space: 2rem;
-  --extra-large-space: 3rem;
 }
 h1 {
-  color: var(--primary-color);
-  font-size: var(--heading-text);
-  margin-bottom: var(--space-medium);
+  color:bisque;
+  font-size:antiquewhite;
+  margin-bottom:blanchedalmond;
 }
 p {
-  color: var(--text-color);
-  margin-bottom: var(--space-large);
+  color:aquamarine;
+  margin-bottom:0ch;
 }
 main {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
-  color: (--text-color);
+  color:blue;
 }
 h1 {
   font-size: larger;
@@ -58,33 +41,35 @@ p {
   max-width: 65ch;
   line-height: 1.6;
 }
-.header {
-  background-color: var(--background-color);
-  padding: var(--space-large);
+.site-header {
+  background-color:rgb(85, 85, 175);
+  padding:0cqb;
 }
 /*box model*/
 .main {
   max-width: 1100px;
   margin: 0auto;
-  padding: var(--medium-space);
+  padding:0cap;
 }
 .content-box {
-  padding: var(--space-large);
-  margin-bottom: var(--large-space);
+  padding:0cqh;
+  margin-bottom:auto;
   border: 1px solid;
   border-radius: 12px;
-  background-color: var(--white-color);
+  background-color:rgb(33, 33, 119);
 }
 .footer {
   position: sticky;
   bottom: 0;
   z-index: 100;
-  background-color: var(--secondary-color);
-  padding: var(--medium-space);
+  background-color:rgb(38, 38, 130);
+  padding: 16px;
 }
 a,
 button {
-  transition: var(--background-color) 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s;
 }
 a:hover,
 button:hover {
@@ -96,7 +81,8 @@ button:focus-visible {
   outline-offset: 3px;
 }
 @media (prefers-reduced-motion: ) {
-  *::before *::after {
+  *::before,
+  *::after {
     scroll-behavior: auto;
     animation-duration: 0.01ms;
     animation-duration: 0.01ms;
@@ -104,20 +90,21 @@ button:focus-visible {
     transition-duration: 0.01ms;
   }
 }
-contact-form {
+label {
   max-width: 600px;
 }
 .contact-form label {
   display: block;
-  margin-bottom: var(--small-space);
+  margin-bottom: 20px;
 }
-.contact-form input,
-.contact-form textarea {
+.label input,
+.label textarea {
   display: block;
   width: 100%;
   padding: 0.75rem;
-  margin-bottom: var(--medium-space);
+  margin: bottom 20px;;
   font: inherit;
   border: 1px solid;
   border-radius: 6px;
 }
+
